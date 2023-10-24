@@ -2,15 +2,17 @@ public class Validation {
     public static boolean yearCheck(String year) {
         try {
             int check = Integer.parseInt(year);
-            if (check > 2001 && check < 2022) {
-                return true;
-            } else {
-                throw new Exception("Wrong input");
+            validateInput(check);
+        }
+        catch (Exception ex) {
+            System.out.println("Error." + ex.getMessage());
+        }
+        return false;
+    }
 
-            }
-        } catch (Exception ex) {
-            System.out.println("Wrong input");
-            return false;
+    public static void validateInput(int year) throws InvalidInputException {
+        if (year < 2002 || year > 2021){
+            throw new InvalidInputException("Input is out of range");
         }
     }
 
