@@ -6,7 +6,7 @@ public class Validation {
         return true;
     }
 
-    public static void validateInput(int year) throws InvalidInputException {
+    private static void validateInput(int year) throws InvalidInputException {
         if (year < 2002 || year > 2021){
             throw new InvalidInputException("Input is out of range");
         }
