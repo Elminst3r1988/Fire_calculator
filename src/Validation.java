@@ -1,13 +1,9 @@
 public class Validation {
     public static boolean yearCheck(String year) {
-        try {
-            int check = Integer.parseInt(year);
-            validateInput(check);
-        }
-        catch (Exception ex) {
-            System.out.println("Error." + ex.getMessage());
-        }
-        return false;
+        int check = Integer.parseInt(year);
+        validateInput(check);
+
+        return true;
     }
 
     public static void validateInput(int year) throws InvalidInputException {
