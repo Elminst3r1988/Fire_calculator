@@ -14,9 +14,8 @@ public class Calculation {
             }
             if (capital > 0) {
                 percent += 0.5;
-                capital = 100;
             } else {
-                percent = percent - 0.5;
+                percent -= 0.5;
                 break;
             }
         }

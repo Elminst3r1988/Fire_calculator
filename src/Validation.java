@@ -8,6 +8,4 @@ public class Validation {
             throw new InvalidInputException("Input is out of range");
         }
     }
-
-
 }

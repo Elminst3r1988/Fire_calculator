@@ -11,7 +11,5 @@ public class Main {
             System.out.println(Calculation.fireCalculator(year));
         }
     }
-
-
 }
 
