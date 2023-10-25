@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        String year = sc.nextLine();
+        int year = sc.nextInt();
         sc.close();
 
         if (Validation.yearCheck(year)) {
